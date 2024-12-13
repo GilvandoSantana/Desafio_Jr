@@ -108,8 +108,9 @@ div.campo > input:focus-within {
 
 form > input[type=submit] {
     display: block;
+    margin: 8px;
     font-size: 1em;
-    width: 100%;
+    width: 98%;
     height: 40px;
     background-color: #49a09d;
     color: white;
