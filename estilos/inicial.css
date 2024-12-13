@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular: de 601px até 768px
+Tablet: 769px até 992px
+Desktop:993px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+body {
+  background-image: url(/imagens/pref.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-family: Arial , Helvetica, sans-serif;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px rgb(32, 29, 29);
+}
+
+h2 {
+  margin: 0px;
+  color: white;
+}
+
+div#administrador {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 230px;
+  height: 150px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px #2d6462;
+  border-color: #2d6462;
+  background-color: #5f2c82;
+}
+
+div#cadastro {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 230px;
+  height: 150px;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px #2d6462;
+  border-color: #2d6462;
+  background-color: #5f2c82;
+}
+
+div#administrador:hover {
+  background-color: #2d6462;
+}
+
+div#cadastro:hover {
+  background-color: #2d6462;
+}
