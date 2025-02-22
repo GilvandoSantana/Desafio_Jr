@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Final</title>
+</head>
+<body>
+    <h1>Teste de final</h1>
+    <label>Digite seu primeiro nome:</label>
+    <input type="text" id="nome"><br>
+    <label>Digite seu sobrenome:</label>
+    <input type="text" id="sobrenome"><br>
+    <button onclick="foi()">Enviar</button>
+
+    <div>
+        <p id="msg">
+
+        </p>
+    </div>
+
+    <script>
+        function foi() {
+            const nome = document.getElementById('nome').value
+            const sobrenome = document.getElementById('sobrenome').value
+            const dados = {nome,sobrenome}
+            localStorage.setItem('dadosUsuario', JSON.stringify(dados))
+            document.getElementById('nome').value = ""
+            document.getElementById('sobrenome').value = ""
+            exibirmsg(`Daodos cadastrado com sucesso ${nome}!`)
+        }
+
+        function exibirmsg (mensagem) {
+            const msg = document.getElementById('msg')
+            msg.textContent = mensagem
+        }
+
+    </script>
+</body>
+</html>
