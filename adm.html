@@ -15,26 +15,27 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
             </div>
             <div id="formulario">
-                <form action="login.php" method="post">
+                <form>
                     <div class="campo">
                         <span class="material-symbols-outlined">
                             person
                         </span>
-                        <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
                         <label for="ilogin">Login</label> 
+                        <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined">
                         lock
                         </span>
-                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">
                         <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
                     </div>
-                    <input type="submit" value="Entrar">
+                    <input type="submit" value="Entrar" onclick="administrador(); return false">
                     <a href="esqueci.html" class="botao">Esqueci a senha</a>
                 </form>
             </div>
         </section>
     </main>
+<script src="adm.js"></script>
 </body>
 </html>

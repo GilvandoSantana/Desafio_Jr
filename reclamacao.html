@@ -16,7 +16,7 @@
             <div id="formulario">
                 <h1>Cadastre aqui sua reclamação:</h1>
                 <p>Seja bem-vindo ao centro de ouvidoria aos moradores de Rosário do Catete. Por favor não pule nenhuma etapa.</p>
-                <form method="post">
+                <form>
                     <div class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             person
@@ -66,24 +66,12 @@
                     <div id="reclamacao" style="text-align: ;">
                         <input type="text" name="nome" id="ireclamacao" autocomplete="ireclamacao" autocomplete="reclamacao" required minlength="8" placeholder="Escreva sua reclamação">
                     </div>
-                    <button onclick="cadastro()" id="enviar">Enviar</button>
-                    <input type="submit" value="Enviar" id="msj">
+                    <input type="submit" value="Enviar" id="enviar" onclick="cadastro()">
                 </form>
             </div>
         </section>
     </main>
 
-    <script>
-        function cadastro() {
-            const nome = document.getElementById('inome')
-            const cpf = document.getElementById('icpf')
-            const endereco = document.getElementById('iendereco')
-            const bairro = document.getElementById('ibairro')
-            const celular = document.getElementById('icelular')
-            const email = document.getElementById('iemail')
-            const dados = {nome, cpf, enderco, bairro, celular, email}
-            localStorage.getItem(dadosUsuario, JSON.stringify(dados))
-        }
-    </script>
+    <script src="reclamacao.js"></script>
 </body>
 </html>
