@@ -8,13 +8,5 @@ function cadastro() {
     const opcoes = document.getElementById('iturma').value
     const reclamacao = document.getElementById('ireclamacao').value
     const dados = {nome,cpf,endereco,bairro,celular,email,opcoes,reclamacao}
-    localStorage.setItem('dadosUsuario', JSON.stringify(dados))
-}
-
-const teste = JSON.parse(localStorage.setItem('dadosUsuario', JSON.stringify(dados)))
-
-function result(){
-    const reverse = ("teste")
-    const resultado = document.getElementById('p')
-    resultado.textContent = reverse
+    localStorage.setItem("dadosUsuario", JSON.stringify(dados))
 }
