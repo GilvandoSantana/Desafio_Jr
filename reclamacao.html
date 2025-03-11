@@ -21,37 +21,37 @@
                         <span class="material-symbols-outlined" style="color: white;">
                             person
                         </span>
-                        <input type="text" name="nome" id="inome" autocomplete="inome" autocomplete="email" required minlength="8" placeholder="Nome completo">
+                        <input type="text" name="nome" id="inome" placeholder="Nome completo">
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             person
                         </span>
-                        <input type="text" name="cpf" id="icpf" autocomplete="icpf" autocomplete="cpf" required minlength="11" placeholder="CPF">
+                        <input type="text" name="cpf" id="icpf" placeholder="CPF">
                     </div>
                     <div id="endereco" class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             location_on
                             </span>
-                        <input type="text" name="endereço" id="iendereco" autocomplete="endereço" required minlength="8" placeholder="Endereço + N°">
+                        <input type="text" name="endereço" id="iendereco" placeholder="Endereço + N°">
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             location_on
                         </span>
-                        <input type="text" name="bairro" id="ibairro" autocomplete="bairro" required minlength="3" placeholder="Bairro"> 
+                        <input type="text" name="bairro" id="ibairro" placeholder="Bairro"> 
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             call
                         </span>
-                        <input type="tel" name="celular" id="icelular" autocomplete="celular" required minlength="8" placeholder="Celular (DDD + N°)"> 
+                        <input type="tel" name="celular" id="icelular" placeholder="Celular (DDD + N°)"> 
                     </div>
                     <div class="campo">
                         <span class="material-symbols-outlined" style="color: white;">
                             mail
                         </span>
-                        <input type="email" name="email" id="iemail" autocomplete="current-password" required minlength="8" placeholder="E-mail">
+                        <input type="email" name="email" id="iemail" placeholder="E-mail">
                     </div>
                     <div id="opt">
                         <h1>Preencha sua reclamação</h1>
@@ -63,21 +63,14 @@
                             <option value="SAUDE">SÁUDE</option>
                         </select>
                     </div>
-                    <div id="reclamacao" style="text-align: ;">
-                        <input type="text" name="nome" id="ireclamacao" autocomplete="ireclamacao" autocomplete="reclamacao" required minlength="8" placeholder="Escreva sua reclamação">
+                    <div id="reclamacao" style="text-align:center">
+                        <input type="text" name="nome" id="ireclamacao" placeholder="Escreva sua reclamação">
                     </div>
-                    <input type="submit" value="Enviar" id="enviar" onclick="cadastro()">
+                    <button id="enviar" onclick="cadastro()">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
-    <div>
-        <button onclick="result()">Mostrar dados</button>
-        <p id="e">
-    
-        </p>
-      </div>
-
-    <script src="reclamacao.js"></script>
+<script src="reclamacao.js"></script>
 </body>
 </html>
