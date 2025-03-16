@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="estilos/loginadm.css">
 </head>
 <body>
-    <main>
-        <section id="login">
+    <div id="container">
+        <div id="filho">
             <div id="imagem">
                 <h1>Login Administrador</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
@@ -17,25 +17,23 @@
             <div id="formulario">
                 <form>
                     <div class="campo">
-                        <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined">
                             person
-                        </span>
-                        <label for="ilogin">Login</label> 
-                        <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
+                    </span> 
+                    <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
                     </div>
                     <div class="campo">
-                        <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined">
                         lock
-                        </span>
-                        <label for="isenha">Senha</label>
-                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
+                    </span>
+                    <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
                     </div>
                     <input type="submit" value="Entrar" onclick="administrador(); return false">
                     <a href="esqueci.html" class="botao">Esqueci a senha</a>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 <script src="adm.js"></script>
 </body>
 </html>

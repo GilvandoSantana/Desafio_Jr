@@ -14,89 +14,59 @@ Lilás:#5f2c82
 }
 
 body, html {
+    overflow: hidden;
+  }
+  
+  #container {
     background-image: url(/imagens/pref2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover ;
+    background-position: center;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-}
-
-section#login {
-    /* Colocar sempre tranform na ultima linha */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-
-    background-color: white;
-    width: 450px;
-    height: 435px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-
-    transition: width 0.5s, height 0.5s;
-    transition-timing-function:ease;
-    transform: translate( -50%, -50%);
-}
-
-section#login > div#imagem {
-    display: block;
-    background: #5f2c82 url(../imagens/prefeitura.jpg);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-}
-
-section#login > div#formulario {
-    display: block;
+#filho {
+    background-color: #ffffff40;
+    height: 60%;
+    width: 50%;
+    box-shadow: 2px 2px 2px 0px black;
+    border-radius: 10px;
     padding: 10px;
 }
 
-div#formulario > h1 {
+#imagem {
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 10px; 
+    font-size: 12pt;
+    padding-top:20px;
 }
 
-section#login > div#formulario > p {
-    font-size: 0.8em;
-}
-
-div#imagem {
-    text-align: center;
-    font-size: 1.2em;
-    padding-top:50px;
-}
-
-form > div.campo {
+.campo {
     background-color: #5f2c82;
     border: 2px solid #5f2c82;
     width: 100%;
-    display: block;
     height: 40px;
     border-radius: 5px;
     margin: 8px 0px;
 }
 
-div.campo > label {
+.campo > label {
     display: none;
 }
 
-div.campo > span {
+.campo > span {
     color: white;
     font-size: 2em;
     width: 40px;
     padding: 5px;
 }
 
-div.campo > input {
+.campo > input {
     /* Colocar sempre tranform na ultima linha */
     background-color: #94cfcd;
     font-size: 1em;
@@ -108,12 +78,11 @@ div.campo > input {
     transform: translateY(-11px);
 }
 
-div.campo > input:focus-within {
+.campo > input:focus-within {
     background-color: white;
 }
 
 form > input[type=submit] {
-    display: block;
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -149,4 +118,3 @@ form > a.botao:hover {
 form > a.botao > span {
     font-size: 0.8em;
 }
-

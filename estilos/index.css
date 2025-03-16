@@ -9,13 +9,26 @@ Desktop:993px até 1200px
 Grandes telas: acima de 1200px
 */
 
-body {
-  background-image: url(/imagens/pref.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
-div#container {
+body, html {
+  overflow: hidden;
+}
+
+#container {
+  background-image: url(/imagens/pref.jpg);
+  background-repeat: no-repeat;
+  background-size:cover ;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#filho {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +52,7 @@ div {
   po.sition: center;
 }
 
-div#administrador {
+#administrador {
   margin: 10px;
   text-align: center;
   font-size: 1.5em;
@@ -52,7 +65,7 @@ div#administrador {
   background-color: #5f2c82;
 }
 
-div#cadastro {
+#cadastro {
   margin: 10px;
   text-align: center;
   font-size: 1.5em;
@@ -69,10 +82,10 @@ a.linha {
   text-decoration: none;
 }
 
-div#administrador:hover {
+#administrador:hover {
   background-color: #2d6462;
 }
 
-div#cadastro:hover {
+#cadastro:hover {
   background-color: #2d6462;
 }
