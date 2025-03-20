@@ -28,7 +28,8 @@ body, html {
   height: 100vh;
 }
 
-#filho {
+#son {
+  background-color: #ffffff40;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +39,8 @@ h1 {
   text-align: center;
   color: white;
   font-family: Arial , Helvetica, sans-serif;
-  font-size: 3em;
-  text-shadow: 1px 1px 1px rgb(32, 29, 29);
+  font-size: 50pt;
+  text-shadow: 2px 2px 1px rgb(32, 29, 29);
 }
 
 h2 {
