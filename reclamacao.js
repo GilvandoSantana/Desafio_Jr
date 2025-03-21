@@ -111,7 +111,9 @@ function cadastro(){
 
         localStorage.setItem('listUser', JSON.stringify(listUser))
 
-        window.location.href = 'index.html'
+        setTimeout(()=>{
+            window.location.href = 'index.html'
+        }, 3000)
 
     } else {
         alert('erro')

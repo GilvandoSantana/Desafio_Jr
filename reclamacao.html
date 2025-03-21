@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/reclamacao.css">
 </head>
 <body>
+    <p id="versao">Versão 2.0</p>
     <div id="container">
         <div id="imagem">
             <h1>Cadastre aqui sua reclamação</h1>
@@ -15,7 +16,7 @@
         </div>
         <div id="formulario">
                 
-            <form>
+            <form id="form">
                 <div class="campo">
                     <span class="material-symbols-outlined" style="color: white;">
                             person
@@ -28,17 +29,11 @@
                     </span>
                     <input type="text" name="cpf" id="icpf" placeholder="CPF">
                 </div>
-                <div id="endereco" class="campo">
-                    <span class="material-symbols-outlined" style="color: white;">
-                            location_on
-                            </span>
-                    <input type="text" name="endereço" id="iendereco" placeholder="Endereço + N°">
-                </div>
                 <div class="campo">
                     <span class="material-symbols-outlined" style="color: white;">
-                            location_on
+                            mail
                     </span>
-                    <input type="text" name="bairro" id="ibairro" placeholder="Bairro"> 
+                    <input type="email" name="email" id="iemail" placeholder="E-mail">
                 </div>
                 <div class="campo">
                     <span class="material-symbols-outlined" style="color: white;">
@@ -46,14 +41,20 @@
                     </span>
                     <input type="tel" name="celular" id="icelular" placeholder="Celular (DDD + N°)"> 
                 </div>
+                <div id="endereco" class="campo">
+                    <span class="material-symbols-outlined" style="color: white;">
+                            location_on
+                            </span>
+                    <input type="text" name="endereço" id="iendereco" placeholder="Endereço">
+                </div>
                 <div class="campo">
                     <span class="material-symbols-outlined" style="color: white;">
-                            mail
+                            location_on
                     </span>
-                    <input type="email" name="email" id="iemail" placeholder="E-mail">
+                    <input type="text" name="bairro" id="ibairro" placeholder="Bairro"> 
                 </div>
                 <div id="opt">
-                    <h1>Preencha sua reclamação</h1>
+                    <h2>Preencha sua reclamação</h1>
                     <select name="turma" id="iturma" class="selecoes" required>
                         <option value="">--- Escolha a area ---</option>
                         <option value="INFRAESTRUTURA">INFRAESTRUTURA</option>
@@ -65,10 +66,17 @@
                 <div id="reclamacao" style="text-align:center">
                     <input type="text" name="nome" id="ireclamacao" placeholder="Escreva sua reclamação">
                 </div>
-                <button id="enviar" onclick="cadastro()">Enviar</button>
+                <div id="arquivo">
+                    <h3>Carregar foto:  </h2>
+                    <input type="file" id="iarquivo">
+                </div>
+                <div id="botao">
+                    <button id="enviar" onclick="cadastro()">Enviar</button>
+                </div>
             </form>
         </div>
     </div>
+
 <script src="reclamacao.js"></script>
 </body>
 </html>
