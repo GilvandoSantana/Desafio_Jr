@@ -37,12 +37,30 @@ nome.addEventListener('keyup', () => {
     }
 })
 cpf.addEventListener('keyup', () => {
-    if(cpf.value.length <= 4){
+    if(cpf.value.length <= 13){
         cpf.setAttribute('style', 'background-color:lightcoral')
         validCpf = false
     } else{
         cpf.setAttribute('style', 'background-color:white')
         validCpf = true 
+    }
+})
+email.addEventListener('keyup', () => {
+    if(email.value.length <= 4){
+        email.setAttribute('style', 'background-color:lightcoral')
+        validEmail = false
+    } else{
+        email.setAttribute('style', 'background-color:white')
+        validEmail = true 
+    }
+})
+celular.addEventListener('keyup', () => {
+    if(celular.value.length <= 13){
+        celular.setAttribute('style', 'background-color:lightcoral')
+        validCelular = false
+    } else{
+        celular.setAttribute('style', 'background-color:white')
+        validCelular = true 
     }
 })
 endereco.addEventListener('keyup', () => {
@@ -63,25 +81,6 @@ bairro.addEventListener('keyup', () => {
         validBairro = true 
     }
 })
-celular.addEventListener('keyup', () => {
-    if(celular.value.length <= 4){
-        celular.setAttribute('style', 'background-color:lightcoral')
-        validCelular = false
-    } else{
-        celular.setAttribute('style', 'background-color:white')
-        validCelular = true 
-    }
-})
-email.addEventListener('keyup', () => {
-    if(email.value.length <= 4){
-        email.setAttribute('style', 'background-color:lightcoral')
-        validEmail = false
-    } else{
-        email.setAttribute('style', 'background-color:white')
-        validEmail = true 
-    }
-})
-
 reclamacao.addEventListener('keyup', () => {
     if(reclamacao.value.length <= 4){
         reclamacao.setAttribute('style', 'background-color:lightcoral')
@@ -89,6 +88,32 @@ reclamacao.addEventListener('keyup', () => {
     } else{
         reclamacao.setAttribute('style', 'background-color:white')
         validReclamacao = true 
+    }
+})
+
+/* Máscara de CPF */
+
+cpf.addEventListener('keypress', () => {
+    let CpfMasc = cpf.value.length
+
+    if (CpfMasc === 3 || CpfMasc ===7) {
+        cpf.value += '.'
+    }else if(CpfMasc === 11) {
+        cpf.value += '-'
+    }
+})
+
+/* Máscara de celular */
+
+celular.addEventListener('keypress', () => {
+    let CelMasc = celular.value.length
+
+    if (CelMasc === 0) {
+        celular.value += '('
+    }else if(CelMasc === 3) {
+        celular.value += ')'
+    }else if(CelMasc === 9) {
+        celular.value += '-'
     }
 })
 

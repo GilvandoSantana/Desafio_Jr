@@ -97,3 +97,28 @@ a.linha {
 #cadastro:hover {
   background-color: #2d6462;
 }
+
+@media (max-width: 1200px) {
+
+  #son {
+    background-color: red;
+    display:block;
+  }
+
+  #administrador {
+    margin: auto;
+  }
+
+  #cadastro {
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 35pt;
+  }
+
+
+
+
+
+}
