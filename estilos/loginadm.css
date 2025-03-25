@@ -38,6 +38,9 @@ body, html {
 }
 
 #filho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #ffffff40;
     height: 60%;
     width: 40%;
@@ -46,12 +49,21 @@ body, html {
     padding: 10px;
 }
 
-#imagem {
+#texto {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 12pt;
     padding-top:20px;
+}
+
+h1{
+    padding-bottom: 20px;
+    font-size: 35pt;
+}
+
+p{
+    padding-bottom: 10px;
+    font-size: 16pt;
 }
 
 .campo {
@@ -125,4 +137,32 @@ form > a.botao:hover {
 
 form > a.botao > span {
     font-size: 0.8em;
+}
+
+#ientrar {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #filho{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        padding-bottom: 20px;
+        font-size: 25pt;
+    }
+    
+    p{
+        padding-bottom: 10px;
+        font-size: 12pt;
+    }
+
+    .campo {
+        margin-top: 10px;
+    }
+
+    
 }
