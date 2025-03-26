@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /*
 Paleta de core:
@@ -102,7 +102,7 @@ p{
     background-color: white;
 }
 
-form > input[type=submit] {
+input[type=submit] {
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -112,11 +112,11 @@ form > input[type=submit] {
     border-radius: 5px;
 }
 
-form > input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #2d6462;
 }
 
-form > a.botao {
+a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
@@ -131,16 +131,34 @@ form > a.botao {
     text-decoration: none;
 }
 
-form > a.botao:hover {
+a.botao:hover {
     background-color: #6cd3cf;
 }
 
-form > a.botao > span {
+a.botao > span {
     font-size: 0.8em;
 }
 
 #ientrar {
     margin-top: 10px;
+}
+
+#msgEntrar {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgFalha {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
 }
 
 @media (max-width: 768px) {

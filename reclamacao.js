@@ -25,6 +25,9 @@ let validTurma = true
 let reclamacao = document.querySelector('#ireclamacao')
 let validReclamacao = false
 
+let msgError = document.querySelector('#msgError')
+let msgSucesso = document.querySelector('#msgSucesso')
+
 /* Eventos */
 
 nome.addEventListener('keyup', () => {
@@ -118,6 +121,8 @@ celular.addEventListener('keypress', () => {
 })
 
 function cadastro(){
+    event.preventDefault();
+
     if(validNome && validCpf && validEndereco && validBairro && validCelular && validEmail && validTurma && validReclamacao){
         let listUser = JSON.parse(localStorage.getItem('listUser') || '[]')
 
@@ -136,11 +141,19 @@ function cadastro(){
 
         localStorage.setItem('listUser', JSON.stringify(listUser))
 
+        msgSucesso.setAttribute('style', 'display: block')
+        msgSucesso.innerHTML = '<strong>Cadastrando usuário...</strong>'
+        msgError.innerHTML = ''
+        msgError.setAttribute('style', 'display: none')
+
         setTimeout(()=>{
-            window.location.href = 'index.html'
-        }, 3000)
+            window.location.href = "/index.html"
+        }, 3000);
 
     } else {
-        alert('erro')
+        msgError.setAttribute('style', 'display: block')
+        msgError.innerHTML = '<strong>Preencha todos os campos corretamente antes de cadastrar</strong>'
+        msgSucesso.innerHTML = ''
+        msgSucesso.setAttribute('style', 'display: none')
     }
 }

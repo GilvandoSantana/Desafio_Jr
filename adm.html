@@ -13,24 +13,24 @@
             <div id="texto">
                 <h1>Login Administrador</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <div id="msgEntrar"></div>
+                <div id="msgFalha"></div>
             </div>
             <div id="login_adm">
-                <form>
-                    <div class="campo">
-                    <span class="material-symbols-outlined">
-                            person
-                    </span> 
-                    <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
-                    </div>
-                    <div class="campo">
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                    <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
-                    </div>
-                    <input type="submit" id="ientrar" value="Entrar" onclick="administrador(); return false">
-                    <a href="esqueci.html" class="botao">Esqueci a senha</a>
-                </form>
+                <div class="campo">
+                <span class="material-symbols-outlined">
+                   person
+                </span> 
+                <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
+                </div>
+                <div class="campo">
+                <span class="material-symbols-outlined">
+                   lock
+                </span>
+                <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
+                </div>
+                <input type="submit" id="ientrar" value="Entrar" onclick="administrador(); return false">
+                <a href="esqueci.html" class="botao">Esqueci a senha</a>
             </div>
         </div>
     </div>

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}
+
+#sair {
+    font-size: 12pt;
+    font-weight: bolder;
+    width: 80px;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    margin: 10px 10px 0px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#sair {
+    background-color: #2d6462;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50pt;
+    text-shadow: 2px 2px 2px 7px rgb(57, 53, 53);
+}
+
+#dados {
+
+    justify-content: center;
+    align-items: center;
+    background-color: #2d6462;
+    height: 80dvh;
+    width: 98%;
+}
