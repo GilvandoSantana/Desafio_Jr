@@ -142,13 +142,13 @@ function cadastro(){
         localStorage.setItem('listUser', JSON.stringify(listUser))
 
         msgSucesso.setAttribute('style', 'display: block')
-        msgSucesso.innerHTML = '<strong>Cadastrando usuário...</strong>'
+        msgSucesso.innerHTML = '<strong>Cadastrando reclamação...</strong>'
         msgError.innerHTML = ''
         msgError.setAttribute('style', 'display: none')
 
         setTimeout(()=>{
-            window.location.href = "/index.html"
-        }, 3000);
+            window.location.href = "/fim.html"
+        }, 2000);
 
     } else {
         msgError.setAttribute('style', 'display: block')

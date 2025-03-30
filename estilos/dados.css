@@ -12,6 +12,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100dvh;
+    width: 100%;
+}
+
+#div_dados {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+    word-break: break-word;
+    background-color: #2d6462;
+    height: 90dvh;
+    width: 98%;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 10pt;
+}
+
+.div {
+    margin-right: 15px;
 }
 
 #botao {
@@ -42,19 +63,9 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 3px solid #2d6462;
+    border-radius: 20px;
     font-size: 50pt;
     text-shadow: 2px 2px 2px 7px rgb(57, 53, 53);
-}
-
-#dados {
-    display: flex;
-    justify-content: baseline;
-    align-items: baseline;
-    word-break: break-word;
-    background-color: #2d6462;
-    height: 70dvh;
-    width: 96%;
-    border-radius: 10px;
     padding: 10px;
-    font-size: 10pt;
 }

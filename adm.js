@@ -30,7 +30,7 @@ function administrador() {
 
         setTimeout(() => {
             window.location.href = "/dados.html";
-        }, 3000);
+        }, 2000);
 
         let token = Math.random().toString(36).substring(2) + Math.random().toString(36).substring(2);
         localStorage.setItem('token', token);
