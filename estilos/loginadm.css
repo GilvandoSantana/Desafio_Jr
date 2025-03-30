@@ -161,6 +161,21 @@ a.botao > span {
     display: none;
 }
 
+#div_password {
+    position: relative;
+}
+
+#input_password{
+    position: relative;
+}
+
+#eye {
+    position: absolute;
+    right:1px;
+    cursor: pointer;
+    color: #5f2c82;
+}
+
 @media (max-width: 1185px) {
     #filho{
         height: 75dvh;

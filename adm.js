@@ -1,6 +1,17 @@
+const btn = document.querySelector("#eye")
+
+btn.addEventListener('click', ()=>{
+    const inputSenha = document.querySelector('#input_password')
+    if (inputSenha.getAttribute('type') == 'password') {
+        inputSenha.setAttribute('type', 'text')
+    } else {
+        inputSenha.setAttribute('type', 'password')
+    }
+})
+
 function administrador() {
     let loginStyle = document.querySelector('#ilogin');
-    let senhaStyle = document.querySelector('#isenha');
+    let senhaStyle = document.querySelector('#input_password');
     const login = loginStyle.value;
     const senha = senhaStyle.value;
     let msgFalha = document.querySelector('#msgFalha');

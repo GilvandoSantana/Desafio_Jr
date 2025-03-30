@@ -17,17 +17,18 @@
                 <div id="msgFalha"></div>
             </div>
             <div id="login_adm">
-                <div class="campo">
+                <div class="campo" id="div_login">
                 <span class="material-symbols-outlined">
                    person
                 </span> 
                 <input type="email" name="login" id="ilogin" autocomplete="email" required minlength="8" placeholder="Seu e-mail">
                 </div>
-                <div class="campo">
+                <div class="campo" id="div_password">
                 <span class="material-symbols-outlined">
                    lock
                 </span>
-                <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" placeholder="Sua senha">  
+                <input type="password" name="senha" id="input_password" autocomplete="current-password" required minlength="8" maxlength="15" placeholder="Sua senha">
+                <span class="material-symbols-outlined" id="eye">visibility</span>
                 </div>
                 <input type="submit" id="ientrar" value="Entrar" onclick="administrador(); return false">
                 <a href="esqueci.html" class="botao">Esqueci a senha</a>

@@ -47,10 +47,14 @@ h1 {
 }
 
 #dados {
-
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    word-break: break-word;
     background-color: #2d6462;
-    height: 80dvh;
-    width: 98%;
+    height: 70dvh;
+    width: 96%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10pt;
 }

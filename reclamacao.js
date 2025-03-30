@@ -128,14 +128,14 @@ function cadastro(){
 
         listUser.push(
             {
-                NomeCad: nome.value,
-                CpfCad: cpf.value,
-                EnderecoCad: endereco.value,
-                BairroCad: bairro.value,
-                CelularCad: celular.value,
-                EmailCad: email.value,
-                TurmaCad: turma.value,
-                ReclamacaoCad: reclamacao.value
+                Nome_Cadastro: nome.value,
+                Cpf_Cadastro: cpf.value,
+                Endereco_Cadastro: endereco.value,
+                Bairro_Cadastro: bairro.value,
+                Celular_Cadastro: celular.value,
+                Email_Cadastro: email.value,
+                Turma_Cadastro: turma.value,
+                Reclamacao_Cadastro: reclamacao.value
             }
         )
 
